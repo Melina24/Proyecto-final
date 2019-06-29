@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+   
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+     <!-- Site Metas -->
+    <title>Institución Educativa "José de San Martín"</title>  
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- ALL VERSION CSS -->
+    <link rel="stylesheet" href="css/versions.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!-- Modernizer for Portfolio -->
+    <script src="js/modernizer.js"></script>
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body class="host_version"> 
+
+	<!-- Modal -->
+	<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-header tit-up">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title">Customer Login</h4>
+			</div>
+			<div class="modal-body customer-box">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs">
+					<li><a class="active" href="#Login" data-toggle="tab">Login</a></li>
+					<li><a href="#Registration" data-toggle="tab">Registration</a></li>
+				</ul>
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div class="tab-pane active" id="Login">
+						<form role="form" class="form-horizontal">
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="email1" placeholder="Name" type="text">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="exampleInputPassword1" placeholder="Email" type="email">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-10">
+									<button type="submit" class="btn btn-light btn-radius btn-brd grd1">
+										Submit
+									</button>
+									<a class="for-pwd" href="javascript:;">Forgot your password?</a>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="tab-pane" id="Registration">
+						<form role="form" class="form-horizontal">
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" placeholder="Name" type="text">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="email" placeholder="Email" type="email">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="mobile" placeholder="Mobile" type="email">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="password" placeholder="Password" type="password">
+								</div>
+							</div>
+							<div class="row">							
+								<div class="col-sm-10">
+									<button type="button" class="btn btn-light btn-radius btn-brd grd1">
+										Save &amp; Continue
+									</button>
+									<button type="button" class="btn btn-light btn-radius btn-brd grd1">
+										Cancel</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	  </div>
+	</div>
+
+    <!-- LOADER -->
+	<div id="preloader">
+		<div class="loader-container">
+			<div class="progress-br float shadow">
+				<div class="progress__item"></div>
+			</div>
+		</div>
+	</div>
+	<!-- END LOADER -->	
+
+    <!-- Start header -->
+	<header class="top-navbar">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="index.html">
+					<img src="images/logo.png" alt="" />
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-host" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbars-host">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+						<li class="nav-item"><a class="nav-link" href="about.html">Nosotros</a></li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Niveles</a>
+							<div class="dropdown-menu" aria-labelledby="dropdown-a">
+								<a class="dropdown-item" href="course-grid-2.html">Inicial </a>
+								<a class="dropdown-item" href="course-grid-3.html">Primaria </a>
+								<a class="dropdown-item" href="course-grid-4.html">Secundaria</a>
+							</div>
+						</li>
+						
+						<li class="nav-item"><a class="nav-link" href="teachers.html">Docentes</a></li>
+                        <li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Noticias</a>
+							<div class="dropdown-menu" aria-labelledby="dropdown-a">
+								<a class="dropdown-item" href="blog.html">Del colegio </a>
+								<a class="dropdown-item" href="blog-single.html">Eventos</a>
+							</div>
+						</li>
+                        
+                        <li class="nav-item active"><a class="nav-link" href="pricing1.html">Servicios</a></li>
+                        
+					
+						
+					</ul>
+					
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- End header -->
+	
+	<div class="all-title-box">
+		<div class="container text-center">
+			<h1>Servicios<span class="m_1"></span></h1>
+		</div>
+	</div>
+	
+    <div id="overviews" class="section wb">
+        <div class="container">
+            <div class="section-title row text-center">
+                <div class="col-md-8 offset-md-2">
+                    <p class="lead"> </p>
+                </div>
+            </div><!-- end title -->
+
+            <hr class="invis"> 
+
+            <div class="row"> 
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="blog-item">
+						<div class="image-blog">
+							<img src="images/profema.jpg" alt="" class="img-fluid">
+						</div>
+						
+						<div class="blog-title">
+							<h2>Tecnología en la enseñanza de matemáticas-Geogebra</h2>
+						</div>
+						<div class="blog-desc">
+							<p class="text-justify">Las tendencias actuales en la enseñanza de la matemática han destacado la importancia del uso de la tecnología como un medio que permite al estudiante obtener conclusiones y realizar observaciones. Por tal motivo la tecnología ha generado cambios sustanciales en la forma como los estudiantes aprenden matemáticas. El uso de la tecnología y el programa Geogebra ayuda en el proceso de enseñanza  y  aprendizaje de la matemática. 
+                           </p>
+						</div>
+						
+					</div>
+                            
+                </div><!-- end col -->
+                    <div class="col-lg-4 col-md-6 col-12">
+                    <div class="blog-item">
+						<div class="image-blog">
+							<img src="images/qr.jpg" alt="" class="img-fluid">
+						</div>
+						
+						<div class="blog-title">
+							<h2>Códigos QR y Realidad Aumentada en el Aula de Matemática</h2>
+						</div>
+						<div class="blog-desc">
+							<p class="text-justify">Esta experiencia combina el uso de QR con animaciones diseñadas con la herramienta Geogebra, partiendo de unas fotocopias que el profesor reparte entre su alumnado y que incluyen los correspondientes códigos QR para escanear y acceder a dichas animaciones en cualquier momento y desde cualquier lugar tan sólo apuntando con un dispositivo móvil (Celular), con una aplicación gratuita que se decarga para móviles, tablets y computadoras. </p>
+						</div>
+						
+					</div>
+                </div><!-- end col -->
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="blog-item">
+						<div class="image-blog">
+							<img src="images/labora.jpg" alt="" class="img-fluid">
+						</div>
+						
+						<div class="blog-title">
+							<h2>Club de Ciencias “PEDRO PAULET”</h2>
+						</div>
+						<div class="blog-desc">
+							<p class="text-justify">En estos tiempos la enseñanza de las ciencias y la tecnología es fundamental para que un país esté en condiciones de atender las necesidades fundamentales de su población. Por ello nuestra I.E.E. José de San Martín, cuenta en la actualidad con tres modernos y amplios laboratorios (Química, Biología y Física) debidamente implementados,  que  son aprovechados por los docentes del área, para el desarrollo y logro de las comptencias y capacidades de nuestros estudiantes.
+                          </p>
+						</div>
+						
+					</div>
+                </div><!-- end col -->
+            </div><!-- end row -->
+
+            <hr class="hr3"> 
+
+            <div class="row"> 
+                <div class="col-lg-4 col-md-6 col-12">
+                   <div class="blog-item">
+						<div class="image-blog">
+							<img src="images/com.jpg" alt="" class="img-fluid">
+						</div>
+						
+						<div class="blog-title">
+							<h2>Get connected e Internet de las cosas</h2>
+						</div>
+						<div class="blog-desc">
+							<p class="text-justify">Curso “Get Connected”: refiere el uso del Internet, identificar los diferentes tipos de sistemas informáticos, sistema operativo Windows, redes sociales, problemas frecuentes de hardware, software y redes.<br>
+                            Curso “Internet de las cosas”: comprende la interconexión de personas, procesos, datos y cosas, los cuatro pilares que forman la “Internet de todo”, operatividad de IP, seguridad informática, revisión de conceptos: M2M, M2P y las interacciones P2P, creación de prototipos.
+
+                            </p>
+						</div>
+						
+					</div>
+                </div><!-- end col -->
+
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="blog-item">
+						<div class="image-blog">
+							<img src="images/tutoria.jpg" alt="" class="img-fluid">
+						</div>
+						
+						<div class="blog-title">
+							<h2>Atención Tutorial Integral(ATI)</h2>
+						</div>
+						<div class="blog-desc">
+							<p class="text-justify">La tutoría tiene como objetivo general brindar acompañamiento socio-afectivo y cognitivo a los estudiantes para contribuir a su formación integral, orientando su proce- so de desarrollo a lo largo del ciclo vital, en una dirección que los beneficie y les permita responder, favorablemente, a los desafíos y  exigencias que  les plantea la vida.<br>
+                            Podemos hablar de dos modalidades de la tutoría: <br>
+                              a). Tutoría Grupal<br>
+                              b). Tutoría Individual
+                            </p>
+						</div>
+						
+					</div>
+                </div><!-- end col -->
+
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="blog-item">
+						<div class="image-blog">
+							<img src="images/ingles.jpg" alt="" class="img-fluid">
+						</div>
+						
+						<div class="blog-title">
+							<h2>El Aprendizaje de Inglés en nuestra Institución</h2>
+						</div>
+						<div class="blog-desc">
+							<p class="text-justify">El Inglés se ha impuesto hoy como el idioma que hace viable la comunicación internacional en la diversidad lingüística de los pueblos y naciones. De acuerdo al British Council (Consejo Británico), para el año 2020, más de 2 mil millones de personas estarán estudiando Inglés.<br>
+                            En los sistemas educativos de los países desarrollados y emergentes no angloparlantes la enseñanza del Inglés es una aptitud básica en el desarrollo de las capacidades de los estudiantes como una herramienta para el acceso al trabajo, la tecnología y la ciencia.
+                          </p>
+						</div>
+						
+					</div>
+                </div><!-- end col -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
+
+    
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Sobre Nosotros</h3>
+                        </div>
+                        <p>Esta página fue creada con el único objetivo que los padres de familia, estudiantes, ex-estudiantes<br>
+                           esten informados de todo lo que ocurre en la institución educativa "José de San Martín"</p>
+                        
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+
+				<div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Enlaces de Información</h3>
+                        </div>
+                        <ul class="footer-links">
+                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="about.html">Nosotros</a></li>
+                            <li><a href="#">Niveles</a></li>
+							<li><a href="teachers.html">Docentes</a></li>
+							<li><a href="pricing1.html">Servicios</a></li>
+                       
+                            <li><a href="#">Noticias</a></li>
+                      
+                        </ul><!-- end links -->
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+				
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <div class="widget-title">
+                            <h3>Detalles de Contacto</h3>
+                        </div>
+
+                        <ul class="footer-links">
+                            <li><a href="mailto:#"></a></li>
+                            <li><a href="#"></a>veronicapizangoparedes@gmail.com</li>
+                            <li><a href="#"></a>davidramos@gmail.com</li>
+                            <li>Calle José Balta N° 769<br>
+                                Pisco Playa – Provincia de Pisco – Región Ica<br></li>
+                            <li>056-533654 </li>
+                        </ul><!-- end links -->
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+                </div>
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </footer><!-- end footer -->
+
+    <div class="copyrights">
+        <div class="container">
+            <div class="footer-distributed">
+                <div class="footer-center">                   
+                    <p class="footer-company-name">All Rights Reserved. &copy; 2018 <a href="#">SmartEDU</a> Design By : <a href="https://html.design/">html design</a></p>
+                </div>
+            </div>
+        </div><!-- end container -->
+    </div><!-- end copyrights -->
+
+    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+
+    <!-- ALL JS FILES -->
+    <script src="js/all.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/custom.js"></script>
+        
+</body>
+</html>
